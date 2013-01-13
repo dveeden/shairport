@@ -14,10 +14,12 @@ Perl modules (install from CPAN if needed e.g. `perl -MCPAN -e 'install X'`):
  * HTTP::Message
  * Crypt::OpenSSL::RSA
  * IO::Socket::INET6
+ * Net::SDP
 
 ## Debian/Ubuntu:
 
     apt-get install build-essential libssl-dev libcrypt-openssl-rsa-perl libao-dev libio-socket-inet6-perl libwww-perl avahi-utils pkg-config
+    perl -MCPAN -e 'install Net::SDP' # There is no Debian package for Net::SDP
     make
     perl shairport.pl
 
